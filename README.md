@@ -21,14 +21,16 @@
 
 # cordova-node-xcode
 
-[![NPM](https://nodei.co/npm/xcode.png?compact=true)](https://nodei.co/npm/xcode/)
-[![Build Status](https://travis-ci.org/apache/cordova-node-xcode.svg?branch=master)](https://travis-ci.org/apache/cordova-node-xcode)
+<!--
+[![NPM](https://nodei.co/npm/nativescript-dev-xcode.png?compact=true)](https://nodei.co/npm/xcode/)
+-->
+[![Build Status](https://travis-ci.org/NativeScript/nativescript-dev-xcode.svg?branch=master)](https://travis-ci.org/apache/cordova-node-xcode)
 
 Parser utility for xcodeproj project files
 
 Allows you to edit xcodeproject files and write them back out.
 
-based on donated code from [alunny / node-xcode](https://github.com/alunny/node-xcode)
+Forked from: [apache/cordova-node-xcode](https://github.com/apache/cordova-node-xcode)
 
 ## Example
 
