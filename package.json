@@ -1,6 +1,6 @@
 {
   "author": "Apache Software Foundation",
-  "name": "xcode",
+  "name": "nativescript-dev-xcode",
   "description": "parser for xcodeproj/project.pbxproj files",
   "main":"index.js",
   "version": "1.5.2-NativeScript",
