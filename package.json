@@ -2,7 +2,7 @@
   "author": "Telerik <support@telerik.com>",
   "name": "nativescript-dev-xcode",
   "description": "parser for xcodeproj/project.pbxproj files",
-  "main":"index.js",
+  "main": "index.js",
   "version": "0.1.0",
   "repository": {
     "url": "https://github.com/NativeScript/nativescript-dev-xcode.git"
