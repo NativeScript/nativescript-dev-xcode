@@ -19,7 +19,7 @@
 #
 -->
 
-# cordova-node-xcode
+# nativescript-dev-xcode
 
 <!--
 [![NPM](https://nodei.co/npm/nativescript-dev-xcode.png?compact=true)](https://nodei.co/npm/xcode/)
