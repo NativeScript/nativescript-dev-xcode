@@ -564,7 +564,15 @@
           ],
           "runOnlyForDeploymentPostprocessing": 0
         },
-        "1D60588F0D05DD3D006BFB54_comment": "Frameworks"
+        "1D60588F0D05DD3D006BFB54_comment": "Frameworks",
+        "2D60588F0D05DD3D006BFB55": {
+          "isa": "PBXFrameworksBuildPhase",
+          "buildActionMask": 2147483647,
+          "files": [
+          ],
+          "runOnlyForDeploymentPostprocessing": 0
+        },
+        "2D60588F0D05DD3D006BFB55_comment": "Frameworks"
       },
       "PBXGroup": {
         "080E96DDFE201D6D7F000001": {
@@ -866,7 +874,7 @@
               "comment": "Sources"
             },
             {
-              "value": "1D60588F0D05DD3D006BFB54",
+              "value": "2D60588F0D05DD3D006BFB55",
               "comment": "Frameworks"
             }
           ],
