@@ -188,10 +188,20 @@ exports.addFramework = {
         test.done();
     },
     'duplicate entries': {
-        'should return false': function (test) {
+        'should return same build file': function (test) {
             var newFile = proj.addFramework('libsqlite3.dylib');
+            var sameFile = proj.addFramework('libsqlite3.dylib');
 
-            test.ok(!proj.addFramework('libsqlite3.dylib'));
+            test.equal(newFile.uuid, sameFile.uuid);
+            test.equal(newFile.fileRef, sameFile.fileRef);
+            test.done();
+        },
+        'should return different build file with same ref for different target': function (test) {
+            var newFile = proj.addFramework('libsqlite3.dylib');
+            var differentFile = proj.addFramework('libsqlite3.dylib', { target: "1D6058900D05DD3D006BFB54"});
+
+            test.notEqual(newFile.uuid, differentFile.uuid);
+            test.equal(newFile.fileRef, differentFile.fileRef);
             test.done();
         }
     },
