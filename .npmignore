@@ -1,7 +1,0 @@
-lib/parser/pbxproj.pegjs
-test/
-.travis.yml
-AUTHORS
-Makefile
-RELEASENOTES.md
-*.tgz
