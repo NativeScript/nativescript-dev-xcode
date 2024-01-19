@@ -21,11 +21,6 @@
 
 # nativescript-dev-xcode
 
-<!--
-[![NPM](https://nodei.co/npm/nativescript-dev-xcode.png?compact=true)](https://nodei.co/npm/xcode/)
--->
-[![Build Status](https://travis-ci.org/NativeScript/nativescript-dev-xcode.svg?branch=master)](https://travis-ci.org/apache/cordova-node-xcode)
-
 Parser utility for xcodeproj project files
 
 Allows you to edit xcodeproject files and write them back out.
@@ -36,19 +31,19 @@ Forked from: [apache/cordova-node-xcode](https://github.com/apache/cordova-node-
 
 ```js
 // API is a bit wonky right now
-var xcode = require('xcode'),
-    fs = require('fs'),
-    projectPath = 'myproject.xcodeproj/project.pbxproj',
-    myProj = xcode.project(projectPath);
+var xcode = require("xcode"),
+  fs = require("fs"),
+  projectPath = "myproject.xcodeproj/project.pbxproj",
+  myProj = xcode.project(projectPath);
 
 // parsing is async, in a different process
 myProj.parse(function (err) {
-    myProj.addHeaderFile('foo.h');
-    myProj.addSourceFile('foo.m');
-    myProj.addFramework('FooKit.framework');
-   
-    fs.writeFileSync(projectPath, myProj.writeSync());
-    console.log('new project written');
+  myProj.addHeaderFile("foo.h");
+  myProj.addSourceFile("foo.m");
+  myProj.addFramework("FooKit.framework");
+
+  fs.writeFileSync(projectPath, myProj.writeSync());
+  console.log("new project written");
 });
 ```
 
@@ -63,7 +58,9 @@ grammar. Other tests will use the prebuilt parser (`lib/parser/pbxproj.js`).
 
 To rebuild the parser js file after editing the grammar, run:
 
-    npm run pegjs
+```
+npm run pegjs
+```
 
 (and be sure to restore the Apache license notice in
 `lib/parser/pbxproj.js` before committing)
