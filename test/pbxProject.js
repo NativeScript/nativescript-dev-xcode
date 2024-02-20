@@ -433,3 +433,20 @@ exports['addToPbxFileReferenceSection'] = {
     }
 }
 
+
+exports['addPbxGroup'] = {
+    'should not add the same group twice': function (test) {
+        var newProj = new pbx('test/parser/projects/group.pbxproj');
+        newProj.parse(function (err, hash) {
+            this.hash.project.objects['PBXVariantGroup']={};
+            var group1 = newProj.addPbxGroup(['test/somefile'], "TestGroup", "test/somepath", null, null);
+            var group2 = newProj.addPbxGroup(['test/somefile'], "TestGroup", "test/somepath", null, null);
+            test.equal(newProj.getPBXGroupByKey(group1.uuid), null);
+            test.equal(newProj.getPBXGroupByKey(group2.uuid).name, "TestGroup");
+            test.equal(newProj.getPbxGroupTracker().getEntries().hasOwnProperty(group1.uuid), false);
+            test.equal(newProj.getPbxGroupTracker().getEntries().hasOwnProperty(group2.uuid), true);           
+        
+        test.done();
+        });
+    }
+}
