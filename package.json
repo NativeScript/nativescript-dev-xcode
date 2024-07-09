@@ -3,7 +3,7 @@
   "name": "nativescript-dev-xcode",
   "description": "parser for xcodeproj/project.pbxproj files",
   "main": "index.js",
-  "version": "0.7.1-alpha.2",
+  "version": "0.7.1-alpha.3",
   "files": [
     "lib",
     "!lib/parser/pbxproj.pegjs"
